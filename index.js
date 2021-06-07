@@ -57,15 +57,22 @@ const debatersUppercase = debaters.map(function(x){ return x.toUpperCase();})
 const directors = ['spikelee', 'ridleyscott', 'zemeckis'];
 
 // 1. add "tonyscott" value to the end of `directors` array
+directors.push('tonyscott');
 
 // 2. remove "spikelee" value and store it in a variable called firstDirector
+const firstDirector = directors[0];
+directors.shift();
 
 // 3. add "himself" value to the start of `directors` array
+directors.unshift('himself');
 
 // 4. remove "ridleyscott" value from the array and store it in a variable called secondDirector
+const secondDirector = directors[1];
+directors.splice(1,1);
 
 // 5. let 'zemeckis' in the array but put a copy of it on a variable called thirdDirector
-
+const thirdDirector = directors[1];
+directors.splice(1,1);
 
 // Q9. Write the function `duplicate` that return the expected result
 console.log(duplicate(['Happily', 'Ever', 'After', 'Fairy', 'Tales', 'for', 'Every', 'Child']));
