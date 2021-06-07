@@ -1,5 +1,5 @@
 // Q1. Create a variable called `denzel` - that can't be redeclared - and assign it the string 'please denzel, help me'
-var denzel = 'please denzel, help me';
+const denzel = 'please denzel, help me';
 
 // Q2. Use the variable `actor` to create a new variable called `inspirational` that is assigned the string "Is Denzel Washington an inspirational actor?"
 const actor = 'Denzel Washington';
@@ -10,9 +10,9 @@ const inspirational = "Is " + actor + " an inspirational actor?";
 // family is not `presidentOfTheUnitedStates` (boolean)
 // family has `children` called "John David", "Katia", "Olivia" and "Malcolm" (array of strings)
 const family = {
-  married : 1983,
-  presidentOfTheUnitedStates : false,
-  children : ['John David', 'Katia', 'Olivia', 'Malcolm']
+  'married' : 1983,
+  'presidentOfTheUnitedStates' : false,
+  'children' : ['John David', 'Katia', 'Olivia', 'Malcolm']
 }
 
 // Q4. Change
@@ -41,11 +41,11 @@ awards["movie"] = "Training Day";
 // * Cry Freedom (1987)
 // * For Queen and Countryy (1988)
 const earlywork = {
-  'Carbon Copy': '1981',
-  'A Soldier Story': '1984',
-  'Power': '1986',
-  'Cry Freedom': '1987',
-  'For Queen and Countryy': '1988'
+  'Carbon Copy': 1981,
+  'A Soldier Story': 1984,
+  'Power': 1986,
+  'Cry Freedom': 1987,
+  'For Queen and Countryy': 1988
 }
 
 // Q7. Return a new array from `debaters` with all item in uppercase
@@ -72,7 +72,6 @@ directors.splice(1,1);
 
 // 5. let 'zemeckis' in the array but put a copy of it on a variable called thirdDirector
 const thirdDirector = directors[1];
-directors.splice(1,1);
 
 // Q9. Write the function `duplicate` that return the expected result
 console.log(duplicate(['Happily', 'Ever', 'After', 'Fairy', 'Tales', 'for', 'Every', 'Child']));
