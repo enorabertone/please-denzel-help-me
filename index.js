@@ -50,6 +50,7 @@ const earlywork = {
 
 // Q7. Return a new array from `debaters` with all item in uppercase
 const debaters = ['we do', 'what we have to do', 'in order to do', 'what we want to do'];
+const debatersUppercase = debaters.map(function(x){ return x.toUpperCase();})
 
 // Q8. Using this array.
 // Do the following 5 steps
