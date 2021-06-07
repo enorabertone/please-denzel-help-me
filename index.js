@@ -84,7 +84,7 @@ var duplicate = function(list){
 }
 
 // Q10. Refactor the current ES5-style function `police` in ES6-style.
-const police = function (names) {
+const police = (names) => {
   const results = [];
 
   for (let i = 0; i < names.length; i++) {
