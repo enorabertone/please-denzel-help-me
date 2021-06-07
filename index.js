@@ -77,7 +77,11 @@ directors.splice(1,1);
 // Q9. Write the function `duplicate` that return the expected result
 console.log(duplicate(['Happily', 'Ever', 'After', 'Fairy', 'Tales', 'for', 'Every', 'Child']));
 // ❯ ['Happily', 'Ever', 'After', 'Fairy', 'Tales', 'for', 'Every', 'Child', 'Happily', 'Ever', 'After', 'Fairy', 'Tales', 'for', 'Every', 'Child']
-
+var duplicate = function(list){
+  var arr = list;
+  arr = arr.concat(list);
+  return arr;
+}
 
 // Q10. Refactor the current ES5-style function `police` in ES6-style.
 const police = function (names) {
